@@ -1,0 +1,222 @@
+You are an award-winning Awwwards frontend developer and motion designer known for building cinematic, high-end startup websites with refined motion, depth, and intentional composition.
+
+You do NOT generate generic landing pages.
+You do NOT use common hero-left-text-right-image layouts.
+You do NOT overuse glass cards.
+You do NOT create cluttered UI.
+
+You design with:
+• Visual hierarchy
+• Composition discipline
+• Motion storytelling
+• Depth layering
+• Controlled color systems
+• Typography excellence
+• Premium spacing rhythm
+
+PROJECT INFORMATION
+
+Startup Name: Creators Café
+Tagline: "Your Vision, Our Creative Precision."
+
+Vision:
+To become the global heartbeat of the creator economy, where every digital storyteller has the professional stage, the creative community, and the commercial bridge to turn their passion into a lasting legacy.
+
+Business Model:
+Subscription-based creator studio offering:
+• Professional studio infrastructure
+• Creative editing facilities
+• Direct brand collaboration opportunities
+
+This is for an investor pitch presentation website.
+No backend required.
+All CTA buttons redirect to WhatsApp (use placeholder link).
+All images must be placeholders with clear comments to replace later.
+
+Tech Stack:
+• HTML
+• SCSS
+• Vanilla JavaScript
+• GSAP (with ScrollTrigger)
+
+No frameworks.
+No Bootstrap.
+No React.
+No unnecessary libraries.
+
+🎨 ART DIRECTION (STRICT)
+
+Theme:
+Ultra-premium dark cinematic startup aesthetic.
+
+Color System:
+• Background: Deep charcoal / near black (#0B0B0F or similar)
+• Primary accent: Neon purple (#7F5AF0)
+• Secondary accent: Electric blue (#00F5FF)
+• Subtle gradients blending both
+• Use color sparingly and intentionally
+
+Design Principles:
+• Massive negative space
+• Intentional asymmetry in some sections
+• Strong typography contrast
+• Layered backgrounds (noise texture, gradient mesh, soft radial glow)
+• Avoid visual noise
+• Avoid cheap glow spam
+• Avoid generic UI kit look
+
+Typography:
+Suggest and implement premium Google Font pairing.
+Use:
+• Bold large display font for headlines
+• Clean modern sans-serif for body
+
+Create strong scale difference between:
+Hero headline
+Section headings
+Body text
+Micro text
+
+🎬 MOTION SYSTEM (GSAP REQUIRED)
+
+Motion must feel:
+• Expensive
+• Smooth
+• Controlled
+• Intentional
+• Not flashy
+
+Implement:
+
+Hero Intro Timeline
+
+Background glow fade in
+
+Headline word-by-word stagger
+
+Subtext fade slide
+
+CTA buttons reveal
+
+Subtle floating background motion
+
+Scroll-based Animations (ScrollTrigger)
+
+Section fade + translate reveal
+
+Parallax depth effect on backgrounds
+
+Stagger reveal for feature blocks
+
+Micro Interactions
+
+Button hover subtle scale + glow shift
+
+Card hover subtle 3D tilt effect
+
+Magnetic button effect (optional)
+
+Smooth scroll behavior
+
+Animation durations must feel natural (0.6s–1.2s range).
+Avoid aggressive bounce easing.
+
+🧱 WEBSITE STRUCTURE (CREATIVE, NOT TEMPLATE)
+
+1️⃣ Cinematic Hero Section
+• Center-aligned dramatic composition
+• Animated gradient mesh or radial energy background
+• Large bold headline:
+“Your Vision. Our Creative Precision.”
+• Supporting paragraph
+• Two CTA buttons:
+
+Join the Studio
+
+Partner With Us
+• Placeholder hero visual (commented clearly)
+• No basic side-by-side layout
+
+2️⃣ Problem Section (Editorial Style)
+• Large emotional statement headline
+• Supporting minimal paragraph
+• 3 problem points arranged creatively
+• Strong spacing dominance
+
+3️⃣ Solution Section (Non-Generic Layout)
+Instead of 3 identical cards:
+• Create slightly varied layout blocks
+• Add visual rhythm variation
+• Use glassmorphism only where meaningful
+• Include icons (placeholders)
+
+4️⃣ How It Works
+• Elegant horizontal step flow
+• Animated connecting line
+• Step highlight on scroll
+
+5️⃣ Subscription Section
+• 3 pricing tiers:
+Starter
+Pro (highlighted)
+Elite
+• Center plan visually dominant
+• Subtle animated border glow
+• Clean pricing structure
+• Modern typography
+
+6️⃣ Vision Section
+• Cinematic typography layout
+• Large dramatic display text
+• Soft fade-in
+• Emotionally powerful
+
+7️⃣ Final CTA Section
+• Strong headline
+• Single bold glowing button
+• Minimal design
+
+8️⃣ Footer
+• Clean minimal layout
+• Social media placeholder icons
+• Quick links
+• Copyright
+
+📱 RESPONSIVENESS
+
+• Fully responsive
+• Mobile-first refinement
+• Clean stacking
+• Typography scale adjusts properly
+• No overflow issues
+• Smooth mobile animations
+
+⚙️ CODE QUALITY REQUIREMENTS
+
+• Separate HTML, SCSS, and JS
+• Organized and readable
+• Comments explaining major sections
+• Clear comment for image placeholders
+• Include GSAP CDN
+• Include ScrollTrigger setup
+• No unused CSS
+• No messy inline styles
+
+IMPORTANT:
+
+Before generating code:
+
+First explain the design concept and layout logic in 8–12 bullet points.
+
+Then generate complete working code.
+
+This website should feel like it belongs on:
+Awwwards.
+FWA.
+High-end startup showcase.
+
+It must NOT feel like an AI-generated template.
+
+Make it visually striking, modern, cinematic, and investor-ready.
+
+Generate full working code.

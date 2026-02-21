@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creators Café — Your Vision, Our Creative Precision.</title>
+    <meta name="description"
+        content="The professional stage for the creator economy. Studio infrastructure, brand bridges, and a community built for legacy." />
+
+    <!-- ─────────────────────────────────────────────────────────
+       FONTS
+       Bebas Neue   → cinematic display headlines
+       Plus Jakarta Sans → refined, geometric body
+  ───────────────────────────────────────────────────────── -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap"
+        rel="stylesheet" />
+
+    <!-- GSAP + ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-scroll>
+
+
+    <!-- ═══════════════════════════════════════════════════════
+       NOISE OVERLAY (grain texture)
+  ═══════════════════════════════════════════════════════ -->
+    <div class="noise" aria-hidden="true"></div>
+
+    <!-- ═══════════════════════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════════════════════ -->
+    <header class="nav" id="js-nav">
+        <div class="nav__inner">
+            <a href="#" class="nav__brand js-hover">
+                <span class="nav__brand-mark"></span>
+                <span>Creators Café</span>
+            </a>
+
+            <nav class="nav__menu" aria-label="Primary">
+                <a href="#problem" class="nav__link js-hover">The Problem</a>
+                <a href="#solution" class="nav__link js-hover">Studio</a>
+                <a href="#pricing" class="nav__link js-hover">Membership</a>
+                <a href="#vision" class="nav__link js-hover">Vision</a>
+            </nav>
+
+            <!-- REPLACE: Update WhatsApp number -->
+            <a href="https://wa.me/8431058469" target="_blank" rel="noopener" class="btn btn--sm js-hover js-magnetic">
+                <span class="btn__text">Join Waitlist</span>
+                <span class="btn__icon">↗</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- ═══════════════════════════════════════════════════════
+       §1 · HERO
+  ═══════════════════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+
+        <!-- Background layers -->
+        <div class="hero__bg" aria-hidden="true">
+            <!-- Signal ring — CSS animated conic gradient -->
+            <div class="hero__ring hero__ring--1"></div>
+            <div class="hero__ring hero__ring--2"></div>
+            <!-- Radial energy core -->
+            <div class="hero__core"></div>
+            <!-- Horizontal scan lines -->
+            <div class="hero__scan"></div>
+        </div>
+
+        <!-- Grid overlay -->
+        <div class="hero__grid" aria-hidden="true"></div>
+
+        <div class="hero__inner">
+
+            <!-- Eyebrow -->
+            <div class="hero__eyebrow js-hero-eye">
+                <span class="hero__eyebrow-dash"></span>
+                <span class="hero__eyebrow-text">The Creator Studio. Reimagined.</span>
+            </div>
+
+            <!-- Headline — split into three dramatic lines -->
+            <h1 class="hero__headline" aria-label="Your Vision. Our Creative Precision.">
+                <span class="hero__hl hero__hl--a js-hero-hl">
+                    <span class="hero__hl-inner">YOUR</span>
+                </span>
+                <span class="hero__hl hero__hl--b js-hero-hl">
+                    <span class="hero__hl-inner hero__hl-inner--stroke">VISION.</span>
+                    <!-- REPLACE: hero accent visual / SVG / image element here -->
+                    <span class="hero__hl-accent" aria-hidden="true">
+                        <img src="Assets/Logo-removebg.svg" class="accent-logo" />
+                    </span>
+                </span>
+                <span class="hero__hl hero__hl--c js-hero-hl">
+                    <span class="hero__hl-inner">OUR CREATIVE</span>
+                </span>
+                <span class="hero__hl hero__hl--d js-hero-hl">
+                    <span class="hero__hl-inner hero__hl-inner--blue">PRECISION.</span>
+                </span>
+            </h1>
+
+            <!-- Supporting text -->
+            <p class="hero__sub js-hero-sub">
+                A subscription studio for digital storytellers who are done being<br class="br-desk" />
+                held back by infrastructure they don't have.
+            </p>
+
+            <!-- CTAs -->
+            <div class="hero__cta js-hero-cta">
+                <!-- REPLACE: Update WhatsApp number -->
+                <a href="https://wa.me/8431058469" target="_blank" rel="noopener"
+                    class="btn btn--primary js-hover js-magnetic">
+                    <span class="btn__text">Join the Studio</span>
+                    <span class="btn__icon">↗</span>
+                </a>
+                <!-- REPLACE: Update WhatsApp number -->
+                <a href="https://wa.me/8431058469" target="_blank" rel="noopener" class="btn btn--ghost js-hover">
+                    <span class="btn__text">Partner With Us</span>
+                </a>
+            </div>
+
+            <!-- Stats strip -->
+            <div class="hero__stats js-hero-stats">
+                <div class="hero__stat">
+                    <span class="hero__stat-num">01</span>
+                    <span class="hero__stat-label">Creative Ecosystem</span>
+                </div>
+            
+                <div class="hero__stat-sep" aria-hidden="true"></div>
+            
+                <div class="hero__stat">
+                    <span class="hero__stat-num">∞</span>
+                    <span class="hero__stat-label">Growth Potential</span>
+                </div>
+            
+                <div class="hero__stat-sep" aria-hidden="true"></div>
+            
+                <div class="hero__stat">
+                    <span class="hero__stat-num">24/7</span>
+                    <span class="hero__stat-label">Creative Access</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="hero__scroll" id="js-hero-scroll" aria-label="Scroll down">
+            <div class="hero__scroll-track">
+                <div class="hero__scroll-thumb"></div>
+            </div>
+            <span class="hero__scroll-label">Scroll</span>
+        </div>
+
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+       §2 · PROBLEM
+  ═══════════════════════════════════════════════════════ -->
+    <section class="problem" id="problem">
+        <div class="problem__inner container">
+
+            <!-- Section label -->
+            <div class="s-label js-reveal">
+                <span>— 01 / The Gap</span>
+            </div>
+
+            <!-- Editorial pull headline -->
+            <h2 class="problem__headline js-reveal">
+                Talent is the<br />
+                <em>least</em> of<br />
+                the problem.
+            </h2>
+
+            <div class="problem__body">
+                <p class="problem__sub js-reveal">
+                    The creator economy has never been bigger.
+                    The infrastructure to support creators has never been more exclusive.
+                    That gap is where most dreams die.
+                </p>
+            </div>
+
+            <!-- Problem points — editorial vertical list -->
+            <div class="problem__points">
+
+                <div class="problem__point js-reveal-left">
+                    <div class="problem__point-header">
+                        <span class="problem__point-num">01</span>
+                        <div class="problem__point-line"></div>
+                    </div>
+                    <h3 class="problem__point-title">No Professional Infrastructure</h3>
+                    <p class="problem__point-desc">
+                        Studios, editing suites, acoustically treated spaces — all locked behind
+                        costs that favour traditional media players, not independent creators.
+                    </p>
+                </div>
+
+                <div class="problem__point js-reveal-left" style="--d: 0.12s">
+                    <div class="problem__point-header">
+                        <span class="problem__point-num">02</span>
+                        <div class="problem__point-line"></div>
+                    </div>
+                    <h3 class="problem__point-title">Brand Deals Behind Closed Doors</h3>
+                    <p class="problem__point-desc">
+                        The most valuable brand collaborations flow through private networks and
+                        agents. Independent creators are rarely invited in.
+                    </p>
+                </div>
+
+                <div class="problem__point js-reveal-left" style="--d: 0.24s">
+                    <div class="problem__point-header">
+                        <span class="problem__point-num">03</span>
+                        <div class="problem__point-line"></div>
+                    </div>
+                    <h3 class="problem__point-title">Isolation Disguised as Freedom</h3>
+                    <p class="problem__point-desc">
+                        Creating alone is romanticised. But without community, feedback loops, and
+                        shared knowledge, most creators plateau and burn out.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+       §3 · SOLUTION
+  ═══════════════════════════════════════════════════════ -->
+    <section class="solution" id="solution">
+        <div class="solution__inner container">
+
+            <div class="s-label js-reveal">
+                <span>— 02 / The Studio</span>
+            </div>
+
+            <h2 class="solution__headline js-reveal">
+                Everything.<br />
+                <span class="solution__headline-ghost">One membership.</span>
+            </h2>
+
+            <!-- Z-pattern feature blocks (not uniform cards) -->
+            <div class="solution__blocks">
+
+                <!-- Block A — wide, landscape -->
+                <div class="sol-block sol-block--a js-reveal js-tilt">
+                    <div class="sol-block__bg sol-block__bg--purple"></div>
+                    <div class="sol-block__content">
+                        <span class="sol-block__num">01</span>
+                        <div class="sol-block__icon" aria-hidden="true">
+                            <!-- REPLACE: Replace with actual icon SVG -->
+                            <span>⬡</span>
+                        </div>
+                        <h3 class="sol-block__title">Professional<br />Studio Access</h3>
+                        <p class="sol-block__desc">
+                            Cinematic shooting stages. Broadcast-quality editing suites.
+                            Acoustically treated recording rooms. All on demand.
+                            <!-- REPLACE: Add studio facility image here -->
+                        </p>
+                    </div>
+                    <div class="sol-block__visual">
+                        <!-- REPLACE: Studio image -->
+                        <div class="sol-block__img-placeholder">
+                            <!-- <span>Studio Facility Image</span> -->
+                        </div>
+                        <!-- Signal pulse on this block -->
+                        <div class="sol-block__pulse" aria-hidden="true"></div>
+                    </div>
+                </div>
+
+                <!-- Block B + C — stacked right column -->
+                <div class="sol-block__col">
+
+                    <div class="sol-block sol-block--b js-reveal js-tilt" style="--d: 0.1s">
+                        <div class="sol-block__bg sol-block__bg--blue"></div>
+                        <div class="sol-block__content">
+                            <span class="sol-block__num">02</span>
+                            <div class="sol-block__icon" aria-hidden="true">
+                                <!-- REPLACE: Replace with actual icon SVG -->
+                                <span>◈</span>
+                            </div>
+                            <h3 class="sol-block__title">Brand Collaboration Bridge</h3>
+                            <p class="sol-block__desc">
+                                Direct introductions to curated brand partners. No agents.
+                                No cold outreach. Your story meets the right audience.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="sol-block sol-block--c js-reveal js-tilt" style="--d: 0.2s">
+                        <div class="sol-block__bg sol-block__bg--mixed"></div>
+                        <div class="sol-block__content">
+                            <span class="sol-block__num">03</span>
+                            <div class="sol-block__icon" aria-hidden="true">
+                                <!-- REPLACE: Replace with actual icon SVG -->
+                                <span>⬢</span>
+                            </div>
+                            <h3 class="sol-block__title">Creator Community Hub</h3>
+                            <p class="sol-block__desc">
+                                A curated private network. Collaborators, editors, strategists.
+                                The creative culture you've been missing.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+       §4 · HOW IT WORKS
+  ═══════════════════════════════════════════════════════ -->
+    <section class="how" id="how">
+        <div class="how__inner container">
+
+            <div class="s-label js-reveal">
+                <span>— 03 / The Process</span>
+            </div>
+
+            <h2 class="how__headline js-reveal">
+                Four moves<br />to legacy.
+            </h2>
+
+            <!-- Steps with animated SVG connector -->
+            <div class="how__flow">
+
+                <!-- SVG connector line — drawn on scroll -->
+                <div class="how__connector" aria-hidden="true">
+                    <svg class="how__svg" viewBox="0 0 1100 2" preserveAspectRatio="none" fill="none">
+                        <line x1="0" y1="1" x2="1100" y2="1" stroke="url(#lineGrad)" stroke-width="1"
+                            stroke-dasharray="4 8" />
+                        <defs>
+                            <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+                                <stop offset="0%" stop-color="#7F5AF0" stop-opacity="0" />
+                                <stop offset="40%" stop-color="#7F5AF0" />
+                                <stop offset="70%" stop-color="#00F5FF" />
+                                <stop offset="100%" stop-color="#00F5FF" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+
+                <div class="how__steps">
+                    <div class="how__step js-reveal">
+                        <div class="how__step-badge">
+                            <span>01</span>
+                        </div>
+                        <h3 class="how__step-title">Apply</h3>
+                        <p class="how__step-desc">Tell us your creative story. Every application is reviewed with care.
+                        </p>
+                    </div>
+                    <div class="how__step js-reveal" style="--d: 0.14s">
+                        <div class="how__step-badge">
+                            <span>02</span>
+                        </div>
+                        <h3 class="how__step-title">Onboard</h3>
+                        <p class="how__step-desc">Choose your plan. Get studio access, community invite, and a dedicated
+                            onboarding call.</p>
+                    </div>
+                    <div class="how__step js-reveal" style="--d: 0.28s">
+                        <div class="how__step-badge">
+                            <span>03</span>
+                        </div>
+                        <h3 class="how__step-title">Create</h3>
+                        <p class="how__step-desc">Book facilities. Collaborate with peers. Produce at a professional
+                            level.</p>
+                    </div>
+                    <div class="how__step js-reveal" style="--d: 0.42s">
+                        <div class="how__step-badge">
+                            <span>04</span>
+                        </div>
+                        <h3 class="how__step-title">Monetise</h3>
+                        <p class="how__step-desc">Unlock brand deal pipelines. Turn creative output into lasting
+                            commercial income.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+       §5 · PRICING
+  ═══════════════════════════════════════════════════════ -->
+    <section class="pricing" id="pricing">
+        <div class="pricing__inner container">
+
+            <div class="s-label js-reveal">
+                <span>— 04 / Membership</span>
+            </div>
+
+            <h2 class="pricing__headline js-reveal">
+                Invest in<br />your craft.
+            </h2>
+
+            <div class="pricing__grid">
+
+                <!-- Starter -->
+                <article class="plan plan--starter js-reveal">
+                    <div class="plan__head">
+                        <p class="plan__tier">Starter</p>
+                        <p class="plan__desc">For creators taking their first professional step.</p>
+                    </div>
+                    <div class="plan__price">
+                        <span class="plan__currency">₹</span>
+                        <span class="plan__amount js-count" data-target="3999">3,999</span>
+                        <span class="plan__cycle">/mo</span>
+                    </div>
+                    <ul class="plan__perks">
+                        <li><span class="plan__perk-icon">◆</span>  8hrs/Day studio access</li>
+                        <li><span class="plan__perk-icon">◆</span> Community membership</li>
+                        <li><span class="plan__perk-icon">◆</span> Monthly brand newsletter</li>
+                        <li><span class="plan__perk-icon">◆</span> Basic editing suite</li>
+                    </ul>
+                    <!-- REPLACE: WhatsApp number -->
+                    <a href="https://wa.me/8431058469" target="_blank" rel="noopener"
+                        class="btn btn--ghost plan__cta js-hover">
+                        <span class="btn__text">Get Started</span>
+                        <span class="btn__icon">↗</span>
+                    </a>
+                </article>
+
+                <!-- Pro — FEATURED -->
+                <article class="plan plan--pro js-reveal" style="--d: 0.1s">
+                    <!-- Animated glow ring -->
+                    <div class="plan__glow" aria-hidden="true"></div>
+                    <div class="plan__badge">Most Popular</div>
+                    <div class="plan__head">
+                        <p class="plan__tier">Pro</p>
+                        <p class="plan__desc">The full studio experience. No compromises.</p>
+                    </div>
+                    <div class="plan__price">
+                        <span class="plan__currency">₹</span>
+                        <span class="plan__amount js-count" data-target="7999">7,999</span>
+                        <span class="plan__cycle">/mo</span>
+                    </div>
+                    <ul class="plan__perks">
+                        <li><span class="plan__perk-icon">◆</span> 20hrs/Day studio access</li>
+                        <li><span class="plan__perk-icon">◆</span> Priority booking</li>
+                        <li><span class="plan__perk-icon">◆</span> Audio mixing</li>
+                        <li><span class="plan__perk-icon">◆</span> 1-on-1 strategy session</li>
+                        <li><span class="plan__perk-icon">◆</span> Full collaboration network</li>
+                    </ul>
+                    <!-- REPLACE: WhatsApp number -->
+                    <a href="https://wa.me/8431058469" target="_blank" rel="noopener"
+                        class="btn btn--primary plan__cta js-hover js-magnetic">
+                        <span class="btn__text">Join as Pro</span>
+                        <span class="btn__icon">↗</span>
+                    </a>
+                </article>
+
+                <!-- Elite -->
+                <article class="plan plan--elite js-reveal" style="--d: 0.2s">
+                    <div class="plan__head">
+                        <p class="plan__tier">Elite</p>
+                        <p class="plan__desc">For creators operating at the highest level.</p>
+                    </div>
+                    <div class="plan__price">
+                        <span class="plan__currency">₹</span>
+                        <span class="plan__amount js-count" data-target="14999">14,999</span>
+                        <span class="plan__cycle">/mo</span>
+                    </div>
+                    <ul class="plan__perks">
+                        <li><span class="plan__perk-icon">◆</span> Unlimited studio acess/3 mo</li>
+                        <li><span class="plan__perk-icon">◆</span> Dedicated production manager</li>
+                        <li><span class="plan__perk-icon">◆</span> Branded content campaigns</li>
+                        <li><span class="plan__perk-icon">◆</span> brand pitching + storage</li>
+                        <li><span class="plan__perk-icon">◆</span> Private studio suite</li>
+                    </ul>
+                    <!-- REPLACE: WhatsApp number -->
+                    <a href="https://wa.me/8431058469" target="_blank" rel="noopener"
+                        class="btn btn--ghost plan__cta js-hover">
+                        <span class="btn__text">Go Elite</span>
+                        <span class="btn__icon">↗</span>
+                    </a>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+       §6 · VISION
+  ═══════════════════════════════════════════════════════ -->
+    <section class="vision" id="vision">
+        <div class="vision__bg" aria-hidden="true">
+            <div class="vision__orb"></div>
+        </div>
+        <div class="vision__inner container">
+
+            <div class="s-label js-reveal" style="justify-content:center">
+                <span>— 05 / Our Purpose</span>
+            </div>
+
+            <blockquote class="vision__quote">
+                <p class="vision__q-line js-vision-line">To become the</p>
+                <p class="vision__q-line vision__q-line--accent js-vision-line">global heartbeat</p>
+                <p class="vision__q-line js-vision-line">of the creator economy —</p>
+                <p class="vision__q-line vision__q-line--light js-vision-line">where passion</p>
+                <p class="vision__q-line vision__q-line--light js-vision-line">becomes <em>legacy.</em></p>
+            </blockquote>
+
+            <p class="vision__caption js-reveal">
+                Every digital storyteller deserves a professional stage, a thriving community,<br class="br-desk" />
+                and a commercial future. We built the bridge.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+       §7 · FINAL CTA
+  ═══════════════════════════════════════════════════════ -->
+    <section class="final-cta" id="cta">
+        <div class="final-cta__inner container">
+
+            <h2 class="final-cta__headline js-reveal">
+                Your story is<br />
+                <span class="final-cta__headline-ghost">already</span> ready.
+            </h2>
+
+            <p class="final-cta__sub js-reveal">
+                500+ creators are building their legacy inside Creators Café.<br class="br-desk" />
+                The stage is set. Walk on.
+            </p>
+
+            <!-- REPLACE: WhatsApp number -->
+            <a href="https://wa.me/8431058469" target="_blank" rel="noopener"
+                class="btn btn--primary btn--xl js-reveal js-hover js-magnetic">
+                <span class="btn__text">Start the Conversation</span>
+                <span class="btn__icon">↗</span>
+            </a>
+
+        </div>
+        <!-- Large bg text -->
+        <p class="final-cta__watermark" aria-hidden="true">CAFÉ</p>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════════ -->
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__rule"></div>
+
+            <div class="footer__body">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo js-hover">
+                        <span class="nav__brand-mark">◈</span>
+                        Creators Café
+                    </a>
+                    <p class="footer__tagline">Your Vision, Our Creative Precision.</p>
+                </div>
+
+                <nav class="footer__links" aria-label="Footer navigation">
+                    <div class="footer__col">
+                        <p class="footer__col-head">Studio</p>
+                        <a href="#solution" class="footer__link js-hover">Facilities</a>
+                        <a href="#how" class="footer__link js-hover">Process</a>
+                        <a href="#pricing" class="footer__link js-hover">Membership</a>
+                    </div>
+                    <div class="footer__col">
+                        <p class="footer__col-head">Company</p>
+                        <a href="#vision" class="footer__link js-hover">Vision</a>
+                        <!-- REPLACE: Add actual links -->
+                        <a href="#" class="footer__link js-hover">About</a>
+                        <a href="#" class="footer__link js-hover">Careers</a>
+                    </div>
+                    <div class="footer__col">
+                        <p class="footer__col-head">Connect</p>
+                        <!-- REPLACE: WhatsApp number -->
+                        <a href="https://wa.me/1234567890" target="_blank" rel="noopener"
+                            class="footer__link js-hover">WhatsApp</a>
+                        <!-- REPLACE: Social links -->
+                        <a href="#" class="footer__link js-hover">Instagram</a>
+                        <a href="#" class="footer__link js-hover">LinkedIn</a>
+                    </div>
+                </nav>
+
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copy">© 2025 Creators Café. All rights reserved.</p>
+                <p class="footer__made">Crafted with precision.</p>
+            </div>
+
+        </div>
+        <!-- Watermark brand name in footer background -->
+        <p class="footer__watermark" aria-hidden="true">CREATORS CAFÉ</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>

@@ -1558,6 +1558,9 @@ button {
         width: 40px;
         height: 1px;
     }
+    .hero__scroll {
+        display: none;
+    }
 
     .problem__points {
         grid-template-columns: 1fr;
@@ -1597,5 +1600,8 @@ button {
 
     .footer__links {
         grid-template-columns: 1fr;
+    }
+    .hero__scroll{
+        display: none;
     }
 }
